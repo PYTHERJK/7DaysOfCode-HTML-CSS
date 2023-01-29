@@ -1,0 +1,15 @@
+@import url(cabecalho.css);
+
+:root{
+    --cor-fundo: #ffffff;
+    --vermelho: #8E2424;
+    --cor-texto: #667085;
+}
+
+* {
+    background-color: var(--cor-fundo);
+    font-family: 'Inter', sans-serif;
+    color: var(--cor-texto);
+}
+
+
