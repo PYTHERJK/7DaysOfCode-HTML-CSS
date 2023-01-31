@@ -15,7 +15,7 @@
 }
 
 .cabecalho__item:hover{
-    color: #808080;
+    color: var(--cor-cinza-texto);
     cursor: pointer;
 }
 

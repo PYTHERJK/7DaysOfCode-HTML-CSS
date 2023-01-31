@@ -1,15 +1,17 @@
 @import url(cabecalho.css);
+@import url(metrica.css);
 
 :root{
     --cor-fundo: #ffffff;
     --vermelho: #8E2424;
-    --cor-texto: #667085;
+    --cor-cinza-texto: #667085;
+    --cor-preto-texto:#000000;
 }
 
 * {
     background-color: var(--cor-fundo);
     font-family: 'Inter', sans-serif;
-    color: var(--cor-texto);
+    color: var(--cor-cinza-texto);
 }
 
 

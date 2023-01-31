@@ -1,0 +1,24 @@
+.metrica__container{
+    display: flex;
+    margin-top: 5em;
+    justify-content: center;
+    column-gap: 3em;
+}
+
+.metrica__container-div{
+    display: grid;
+}
+
+.metrica__container-titulo{
+    color: var(--vermelho);
+    font-size: 3.75rem;
+    font-weight: 550;
+    margin-bottom: 0.3em;
+}
+
+.metrica__container-subtitulo{
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: var(--cor-preto-texto);
+}
