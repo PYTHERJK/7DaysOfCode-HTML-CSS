@@ -1,0 +1,33 @@
+.secao__imagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6em;
+    row-gap: 1.7em;
+}
+
+.secao__imagem-vagas {
+    color: var(--vermelho);
+    font-size: 0.875rem;
+    padding: 0.7em;
+    border-radius: 25px;
+    background-color: rgba(142, 36, 36, 0.1);
+    font-weight: bold;
+}
+
+.secao__imagem-titulo {
+    color: var(--cor-preto-texto);
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.secao__imagem-texto {
+    font-size: 20px;
+
+}
+
+.secao__imagem-img {
+    align-self: center;
+    transform: scale(1.0);
+}
