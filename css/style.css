@@ -2,6 +2,7 @@
 @import url(metrica.css);
 @import url(seção-imagem.css);
 @import url(vagas.css);
+@import url(depoimentos.css);
 
 :root {
     --cor-fundo: #ffffff;
