@@ -1,6 +1,7 @@
 @import url(cabecalho.css);
 @import url(metrica.css);
 @import url(seção-imagem.css);
+@import url(vagas.css);
 
 :root {
     --cor-fundo: #ffffff;
