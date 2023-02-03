@@ -10,11 +10,12 @@
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     font-size: 16px;
-    
+    padding: 0 0 0 1em ;
     
 }
+
 
 .cabecalho__item:hover{
     color: var(--cor-cinza-texto);

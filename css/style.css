@@ -3,6 +3,7 @@
 @import url(seção-imagem.css);
 @import url(vagas.css);
 @import url(depoimentos.css);
+@import url(rodape.css);
 
 :root {
     --cor-fundo: #ffffff;
