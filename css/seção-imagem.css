@@ -31,3 +31,17 @@
     align-self: center;
     transform: scale(1.0);
 }
+
+@media screen and (max-width:800px) {
+    .secao__imagem{
+        display: flex;
+        text-align: center;
+        transform: scale(.6);
+        margin-top: -180px;
+    }
+
+
+    .secao__imagem-img{
+        transform: scale(.6);
+    }
+}

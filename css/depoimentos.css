@@ -32,3 +32,16 @@
 .depoimento__cargo{
     font-size: 0.875rem;
 }
+
+@media screen and (max-width:800px) {
+    .depoimento{
+        transform: scale(.8);
+        text-align: center;
+        margin-top: -100px;
+    }
+
+    .depoimento__texto{
+        font-size: 12px;
+    }
+    
+}

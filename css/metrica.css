@@ -18,3 +18,18 @@
     margin-bottom: 0.7em;
     color: var(--cor-preto-texto);
 }
+
+@media screen and (max-width:800px) {
+    .metrica__container{
+        display: flex;
+        margin-top: -60px;
+        flex-direction: row;
+        text-align: center;
+        transform: scale(0.4);
+    }
+
+    .metrica__container-div{
+        padding: 0 3em;
+    }
+
+}
