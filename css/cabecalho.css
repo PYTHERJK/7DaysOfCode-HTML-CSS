@@ -1,73 +1,88 @@
 .cabecalho {
-    width: 95vw;
-    margin-top: .7em;
     display: flex;
     flex-direction: column;
-    row-gap: 5em;
+    align-items: center;
 }
 
-.container__botao,
-.container__rotulo {
+.cabecalho__menu-hamburguer {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container input,
+.cabecalho__lista,
+.cabecalho__item1 {
     display: none;
 }
 
-.cabecalho__lista {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    justify-content: center;
-    align-items: flex-end;
-    font-size: 16px;
-    padding: 0 0 0 1em;
-
-}
-
-
-.cabecalho__item:hover {
-    color: var(--cor-cinza-texto);
-    cursor: pointer;
-}
-
-.cabecalho__lista li:nth-child(1) {
-    grid-column: 1/3;
+.container__botao:checked~.cabecalho__lista {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    column-gap: 0.3em;
+}
+
+.container__botao:checked~.container__rotulo p {
+    display: none;
+}
+
+.container__botao:checked~.cabecalho__lista button {
+    display: none;
+}
+
+.cabecalho__item7 {
+    display: flex;
+    column-gap: 1em;
+    margin-top: 0.3em;
+    color: var(--vermelho);
+}
+
+.cabecalho__item7 button {
+    border: 1px var(--cor-preto-texto) solid;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--cor-fundo);
+    background-color: var(--cor-preto-texto);
+}
+
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    column-gap: 0.5em;
+    align-items: center;
+    row-gap: -2em;
+}
+
+
+.container__rotulo {
+    margin-top: -2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5em;
+    font-size: 12px;
+    color: var(--vermelho);
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.container__rotulo p {
+    border: 1px var(--cor-cinza-texto) solid;
+    padding: 0.5em;
+    border-radius: 5px;
+    color: var(--cor-cinza-texto);
 }
 
 .cabecalho__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    margin: .5em 0.2em;
+    font-weight: bold;
+    color: var(--vermelho);
 
-.cabecalho__item6 {
-    display: flex;
-    grid-column: 9/-1;
-    align-items: center;
-    justify-content: center;
-    column-gap: 1em;
-}
-
-.cabecalho__lista-botao {
-    width: 7vw;
-    padding: .5em;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.cabecalho__lista-botao:hover {
-    transform: scale(1.05);
-}
-
-.cabecalho__lista-botao:nth-child(1) {
-    border: none;
-    background-color: var(--cor-fundo);
-}
-
-.cabecalho__lista-botao:nth-child(2) {
-    background-color: var(--vermelho);
-    color: var(--cor-fundo);
 }
 
 .cabecalho__sobre-nos {
@@ -79,37 +94,151 @@
 }
 
 .cabecalho__sobre-nos-topo {
-    color: var(--vermelho);
-    font-weight: 700;
+    display: none;
 }
 
 .cabecalho__sobre-nos-titulo {
+    margin-top: 1em;
     color: black;
-    font-size: 3rem;
+    font-size: 18px;
     font-weight: 600;
 }
 
 .cabecalho__sobre-nos-texto {
-    font-size: 1.25rem;
+    margin-top: -1em;
+    font-size: 14px;
+    text-align: center;
 }
 
-@media screen and (max-width:800px) {
-    .cabecalho{
-        width: auto;
-    }
+.cabecalho__sobre-nos br{
+    display: none;
+}
 
-    .cabecalho__item, .cabecalho__item6{
-        display: none;
-    }
 
-    .cabecalho__lista{
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        width: 100vw;
+        margin-top: .7em;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        row-gap: 5em;
     }
 
-    .cabecalho__sobre-nos{
+
+    .container__botao,
+    .container__rotulo {
         display: none;
     }
-    
+
+    .cabecalho__lista {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 16px;
+        padding: 0 0 0 1em;
+
+    }
+
+    .container__botao:checked~.cabecalho__lista {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: repeat(8, 1fr);
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 16px;
+        padding: 0 0 0 1em;
+    }
+
+    .container__botao:checked~.cabecalho__item {
+        color: var(--cor-cinza-texto);
+    }
+
+    .container__botao:checked~.cabecalho__lista button {
+        display: block;
+    }
+
+
+    .cabecalho__item:hover {
+        color: var(--cor-cinza-texto);
+        cursor: pointer;
+    }
+
+    .cabecalho__lista li:nth-child(1) {
+        grid-column: 1/2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 0.5em;
+    }
+
+    .cabecalho__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--cor-preto-texto);
+    }
+
+    .cabecalho__item6 {
+        display: flex;
+        grid-column: 7/8;
+        align-items: center;
+        justify-content: center;
+        column-gap: 1em;
+    }
+
+    .cabecalho__item7 {
+        display: none;
+    }
+
+    .cabecalho__lista-botao {
+        width: 7vw;
+        padding: .5em;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .cabecalho__lista-botao:hover {
+        transform: scale(1.05);
+    }
+
+    .cabecalho__lista-botao:nth-child(1) {
+        border: none;
+        background-color: var(--cor-fundo);
+    }
+
+    .cabecalho__lista-botao:nth-child(2) {
+        background-color: var(--vermelho);
+        color: var(--cor-fundo);
+    }
+
+    .cabecalho__sobre-nos {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5em;
+        align-self: center;
+        text-align: center;
+        margin-top: -3em;
+    }
+
+    .cabecalho__sobre-nos-topo {
+        color: var(--vermelho);
+        font-weight: 700;
+    }
+
+    .cabecalho__sobre-nos-titulo {
+        color: black;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .cabecalho__sobre-nos-texto {
+        font-size: 1.25rem;
+    }
+
+    .cabecalho__sobre-nos br{
+        display: block;
+    }
+
+
 }

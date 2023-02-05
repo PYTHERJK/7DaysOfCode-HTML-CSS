@@ -1,7 +1,7 @@
 @import url(cabecalho.css);
 @import url(metrica.css);
 @import url(seção-imagem.css);
-@import url(vagas.css);
+@import url(vagas.css); 
 @import url(depoimentos.css);
 @import url(rodape.css);
 
@@ -16,6 +16,8 @@
 html{
     font-family: var(--fonte);
 }
+
+
 
 
 
